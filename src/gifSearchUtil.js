@@ -5,6 +5,7 @@ function getGiphyUrl(category) {
 }
 
 function fetchGiph(category) {
+  category = category.replace(/ /g, "+");
   return fetch(getGiphyUrl(category))
     .then(response => response.json())
     .then(json => json.data.image_url);
