@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  background: url("https://www.earlham.lib.ia.us/theme_resources/christmassnowred/image");
+}
+
+.App > .calendar > .door > .door-opened > img,
+.App > .calendar > .door > .door-closed > img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.App > .calendar > .door {
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App > .calendar > .door > .day {
+  background: #33171750;
+  padding: 1rem;
+  flex: 1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.App > .calendar > .door > .door-opened,
+.App > .calendar > .door > .door-closed {
+  flex: 2;
+}
+
+.App > .calendar {
+  padding: 5rem;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
+}
